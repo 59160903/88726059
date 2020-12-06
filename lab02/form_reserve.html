@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            display: inline-block;
+            vertical-align: text-top;
+        }
+
+        .button {background-color: #555555;color: Gray;}
+    </style>
+</head>
+
+<body>
+    <h3>Hotel Booking</h3>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
+
+        <label for="Room Type">Room Type</label>
+
+        <select name="roomtype" >
+            <option value="" disabled selected hidden>Please Select</option>
+            <option value="Standard">Standard</option>
+            <option value="Luxury">Luxury</option>
+            <option value="Deluxe">Deluxe</option>
+        </select>
+        <br />
+
+        <label for="Number of Guests">Number of Guests</label>
+        <select name="numberguests">
+            <option value="" disabled selected hidden>Please Select</option>
+            <option value="1-2">1-2</option>
+            <option value="3-4">3-4</option>
+            <option value="5-6">5-6</option>
+            <option value="7-8">7-8</option>
+        </select>
+        <br />
+
+        <label for="name">Name</label>
+        <input type="text" name="fname" id="fname" placeholder="First" /> <input type="text" name="lname" id="lname"
+            placeholder="Last" />
+        <br />
+
+        <label for="Email">Email</label>
+        <input type="text" name="email" id="email" placeholder="john@company.com" />
+        <br />
+
+        <label for="Arrival">Arrival</label>
+        <input type="date" name="arrival" id="arrival" />
+        
+        <input type="time" name="arrivaltime" id="arrivaltime" />
+        <br />
+
+        <label for="Departure">Departure</label>
+        <input type="date" name="departure" id="departure" />
+        
+        <input type="time" name="departuretime" id="departuretime" />
+        <br />
+
+        <label for="Free Pickup">Free Pickup</label>
+        <input type="radio" name="pickup" id="pickup" value="Yes" />Yes, Sure!
+        <br />
+        <label for="Free Pickup"></label>
+        <input type="radio" name="pickup" id="pickup" value="No" />No, I already rented a car
+        <br />
+
+        <label for="Fight Number">Fight Number</label>
+        <input type="text" name="fightnumber" id="fightnumber" placeholder="C1209" SIZE=48 />
+        <br />
+
+        <label for="Otherrequests">Otherrequests </label>
+        <textarea name="otherrequests" id="otherrequests" rows="5" cols="50"></textarea>
+        <br />
+        <br />
+
+        <div style="text-align:left; width:100%; margin-left:155px;">
+            <input type="submit" class="button button5" value="Complete Reservation" />
+        </div>
+
+    </form>
+</body>
+
+</html>
